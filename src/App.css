@@ -252,3 +252,16 @@ textarea {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+
+@media only screen and (max-width:809px )  { 
+
+  .book-list-ul > li {
+    width: 85%;
+  }
+
+  .modal > div {
+    width: 85%;
+  }
+
+}
