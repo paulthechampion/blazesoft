@@ -98,6 +98,11 @@ header {
   padding-bottom: 15px;
 }
 
+.logo {
+  position: relative;
+  top: 7px;
+}
+
 header > div {
   width: 40%;
   margin: auto;
