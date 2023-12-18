@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,html {
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book-list-ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.book-list-ul > li {
+  width: 30%;
+  margin: 20px;
+  color: black;
+  list-style: none;
+}
+
+.book-list-ul > li > img{ 
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.book-list-details {
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  color: green;
+}
+
+.book-list-details > div {
+  margin: auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  background-color: rgb(156, 155, 155,.5);
+  height: 100%;
+  width: 100%;
+}
+
+.modal > div {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.book-details-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.book-details-inner > div {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.book-details-img-div > img {
+  width: 100%;
+  height: 400px;
+}
+
+.book-detials-details {
+  padding-left: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+header {
+  background-color: rgba(0, 7, 78, 0.9);
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px solid rgba(57, 65, 148);
+  display: flex;
+  padding: 20px;
+  padding-bottom: 15px;
+}
+
+header > div {
+  width: 40%;
+  margin: auto;
+}
+
+.header-menu > ul {
+  display: flex;
+  justify-content: right;
+  
+}
+
+.header-menu > ul > li {
+  list-style: none;
+  margin-right: 30px;
+  color: white;
+  text-align: right;
+}
+
+.header-div {
+  position: relative;
+}
+
+.intro-div{
+  width: 100%;
+}
+
+video {
+  
+  width: 100%;
+}
+
+.intro-main {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.intro-main > img {
+  width: 35%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-content {
+  background-color: #F38428;
+  margin-top: -10px;
+  position: relative;
+}
+
+.book-content > div > h2 {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.add-book-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.add-book-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.add-book-image-div {
+  width: 40%;
+  margin: auto;
+}
+
+.add-book-rest {
+  width: 40%;
+  margin: auto;
+  margin-top: 0;
+}
+
+.add-book-rest > input {
+  width: 100%;
+  height: 2em;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+.filepond-container {
+  height: 350px; /* Adjust the height value as needed */
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+.add-book-rest > button {
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+.cancel-add {
+  position: absolute;
+  right: 0px;
+}
+
+.book-detials-details > p {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.update-btn {
+  position: absolute;
+  bottom: 25px;
+}
+
+.update-update-btn {
+  margin-top: 20px;
+}
+
+.cancel-update-btn {
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+
+.update-book-form {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.update-book-form > input {
+  margin-right: 0px;
+}
+
+.update-book-form > label {
+  padding-right: 0px;
+}
+
+.update-description {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
