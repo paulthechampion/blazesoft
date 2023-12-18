@@ -15,7 +15,8 @@ const BookDetailsModal: React.FC<BookDetailsModalProps> = ({ book, onClose, onUp
   const [updatedBook, setUpdatedBook] = useState<Book>(book);
 
   const handleUpdateBook = () => {
-    const updatedBookWithoutImage = { ...updatedBook, image: book.image };
+    const formattedPrice = updatedBook.price.startsWith('$') ? updatedBook.price : `$${updatedBook.price}`;
+    const updatedBookWithoutImage = { ...updatedBook, price:formattedPrice, image: book.image };
   
     dispatch(updateBook(updatedBookWithoutImage));
   
