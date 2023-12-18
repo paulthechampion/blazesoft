@@ -267,4 +267,28 @@ textarea {
   .book-details-inner > div {
     width: 100%;
   }
+
+  .add-book-image-div {
+    width: 100%
+  }
+
+  .add-book-rest {
+    width: 100%;
+  }
+
+  .header-menu > ul {
+    display: none;
+  }
+
+  .logo > img {
+    width:60%;
+  }
+
+  .delete-btn {
+    bottom: 15px;
+  }
+
+  .book-details-main {
+    bottom:15px;
+  }
 }
