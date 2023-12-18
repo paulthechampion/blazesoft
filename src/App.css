@@ -291,4 +291,8 @@ textarea {
   .book-details-main {
     bottom:15px;
   }
+
+  .update-btn {
+    bottom: 15px;
+  }
 }
