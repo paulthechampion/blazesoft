@@ -264,4 +264,7 @@ textarea {
     width: 85%;
   }
 
+  .book-details-inner > div {
+    width: 100%;
+  }
 }
