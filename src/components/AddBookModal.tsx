@@ -27,8 +27,12 @@ const AddBookModal: React.FC<AddBookModalProps> = ({ onClose, onAddBook }) => {
   const [imageFile, setImageFile] = useState<File | null>(null);
 
   const handleAddBook = () => {
+    // Check if the price contains a "$", if not, add it
+    const formattedPrice = newBook.price.startsWith('$') ? newBook.price : `$${newBook.price}`;
+
     const image = imageFile ? URL.createObjectURL(imageFile) : '';
-    onAddBook({ ...newBook, image });
+    onAddBook({ ...newBook, price: formattedPrice, image });
+
     setNewBook({
       id: 0,
       name: '',
@@ -74,10 +78,8 @@ const AddBookModal: React.FC<AddBookModalProps> = ({ onClose, onAddBook }) => {
                 <button type="button" onClick={onClose} className='cancel-add'>
                   Cancel
                 </button>
+              </div>
           </div>
-          </div>
-          
-          
         </form>
       </div>
     </div>
