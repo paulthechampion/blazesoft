@@ -41,7 +41,8 @@ const BookDetailsModal: React.FC<BookDetailsModalProps> = ({ book, onClose, onUp
             />
             <label>Price:</label>
             <input
-              type="text"
+              type="number"
+              className="price-input"
               value={updatedBook.price}
               onChange={(e) => setUpdatedBook((prevBook) => ({ ...prevBook, price: e.target.value }))}
             />

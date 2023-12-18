@@ -252,3 +252,15 @@ textarea {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+.price-input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+.price-input::-webkit-inner-spin-button,
+.price-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

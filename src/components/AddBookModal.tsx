@@ -66,7 +66,7 @@ const AddBookModal: React.FC<AddBookModalProps> = ({ onClose, onAddBook }) => {
                 <label>Name</label><br/>
                 <input type="text" value={newBook.name} onChange={(e) => setNewBook({ ...newBook, name: e.target.value })} /><br/>
                 <label>Price</label><br/>
-                <input type="text" value={newBook.price} onChange={(e) => setNewBook({ ...newBook, price: e.target.value })} /><br/>
+                <input type="number" value={newBook.price} className="price-input" onChange={(e) => setNewBook({ ...newBook, price: e.target.value })} /><br/>
                 <label>Category</label><br/>
                 <input type="text" value={newBook.category} onChange={(e) => setNewBook({ ...newBook, category: e.target.value })} /><br/>
                 <label>Description</label><br/>
